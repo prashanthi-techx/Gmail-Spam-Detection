@@ -1,0 +1,68 @@
+Gmail Spam Detection
+
+A machine learning project that detects spam emails using NLP and TF-IDF vectorization.
+
+Project Overview
+- Developed a spam classifier to detect and filter malicious emails in real-time.
+- Applied text cleaning, tokenization, and TF-IDF vectorization to improve accuracy and reduce false positives.
+- Built a Streamlit web app for real-time predictions.
+
+Tech Stack
+- Python, Scikit-learn, Pandas, NumPy, NLTK, Streamlit
+
+Steps to Run
+
+1.Install dependencies
+```bash
+pip install -r requirements.txt
+
+2.Train the model
+
+Run the Jupyter Notebook:
+
+    jupyter notebook gmail_spam_detection.ipynb
+
+This will create models/spam_classifier.pkl and models/vectorizer.pkl.
+
+3. Run the web app
+streamlit run app.py
+
+
+Then open http://localhost:8501
+ in browser.
+
+Folder Structure
+Gmail-Spam-Detection/
+-gmail_spam_detection.ipynb
+-app.py
+-requirements.txt
+-README.md
+-data/
+│   - spam.csv
+-models/
+    -spam_classifier.pkl
+    -vectorizer.pkl
+
+Results
+
+Achieved around 97–98% accuracy with Logistic Regression.
+
+Handles spam, phishing, and promotional emails effectively.
+
+Example Inputs
+Example Email	Prediction
+"Congratulations! You won a lottery!"	Spam 
+"Hey, are we meeting today at 5?"	Not Spam 
+
+
+
+6. How to Run Everything (Step-by-Step)
+
+1️⃣ Open your folder `Gmail-Spam-Detection` in VS Code or Jupyter.  
+2️⃣ Make sure dataset is saved as `data/spam.csv` (downloaded from Kaggle).  
+3️⃣ Open notebook `gmail_spam_detection.ipynb` → Run all cells.  
+   - It will train and save `spam_classifier.pkl` and `vectorizer.pkl`.  
+4️⃣ Then open terminal and type:
+```bash
+streamlit run app.py
+5️⃣ A browser tab opens. Paste an email, click Predict, and see result 🚀.
