@@ -65,4 +65,5 @@ Example Email	Prediction
 4️⃣ Then open terminal and type:
 ```bash
 streamlit run app.py
-5️⃣ A browser tab opens. Paste an email, click Predict, and see result 🚀.
+5️⃣ A browser tab opens. Paste an email, click Predict, and see result .
+
