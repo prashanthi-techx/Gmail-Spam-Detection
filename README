@@ -63,7 +63,7 @@ Example Email	Prediction
 3️⃣ Open notebook `gmail_spam_detection.ipynb` → Run all cells.  
    - It will train and save `spam_classifier.pkl` and `vectorizer.pkl`.  
 4️⃣ Then open terminal and type:
-```bash
 streamlit run app.py
 5️⃣ A browser tab opens. Paste an email, click Predict, and see result .
+
 
